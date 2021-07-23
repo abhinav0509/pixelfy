@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero {
+  height: 550px;
+  background-image: url("https://images.unsplash.com/photo-1591806186103-3e0688f7eab2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.hero .overlay {
+  background-color: #000;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.5;
+}
+.hero .content h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.hero .content p {
+  z-index: 9;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+.features > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.features-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.form {
+  display: grid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.label {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+.card-list {
+  column-count: 3;
+}
+
+.card {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.card--image {
+  flex: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .form {
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .input {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-list {
+    column-count: 1;
   }
 }
