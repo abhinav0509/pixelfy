@@ -79,6 +79,14 @@ body {
   margin-top: 1rem;
   border-radius: 10px;
 }
+.hire-section {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-cards {
+  display: flex;
+}
 
 @media (min-width: 768px) {
   .form {

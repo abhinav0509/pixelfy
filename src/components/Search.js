@@ -17,7 +17,7 @@ const Search = () => {
     unsplash.search
       .getPhotos({ query: query, orientation: "landscape" })
       .then((result) => {
-        console.log(result.response.results);
+        //console.log(result.response.results);
         const queryResults = result.response.results;
         setPhotos(queryResults);
       })

@@ -23,12 +23,12 @@ const Navbar = () => {
           <NavLink className="nav-item nav-link active" to="/home">
             Home <span className="sr-only">(current)</span>
           </NavLink>
-          <NavLink className="nav-item nav-link" to="#">
-            Features
-          </NavLink>
 
           <NavLink className="nav-item nav-link" to="/search">
             Search
+          </NavLink>
+          <NavLink className="nav-item nav-link" to="/hire">
+            Hire
           </NavLink>
           <NavLink className="nav-item nav-link" to="#">
             Contact Us

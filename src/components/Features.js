@@ -36,7 +36,7 @@ const Features = () => {
               Hire awesome photographers around your locality, communicate with
               directly
             </p>
-            <Link to="#" className="btn btn-primary">
+            <Link to="/hire" className="btn btn-primary">
               Start Hiring
             </Link>
           </div>
